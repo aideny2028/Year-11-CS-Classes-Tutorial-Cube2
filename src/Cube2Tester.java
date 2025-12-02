@@ -121,9 +121,9 @@ public class Cube2Tester {
         Cube2 cube2 = new Cube2(7);
         Cube2 cube3 = new Cube2(9);
         Cube2 cube4 = new Cube2(7, "rainbow");
-        assertTrue(cube1.equals(cube1));
-        assertFalse(cube1.equals(cube2));
-        assertFalse(cube1.equals(cube3));
-        assertTrue(cube1.equals(cube4));
+        assertTrue(cube1.equals((Cube2) cube1));
+        assertFalse(cube1.equals((Cube2) cube2));
+        assertFalse(cube1.equals((Cube2) cube3));
+        assertTrue(cube1.equals((Cube2) cube4));
     }
 }
